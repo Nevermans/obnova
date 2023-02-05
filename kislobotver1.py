@@ -340,7 +340,7 @@ def handle_offer_message(message):
     user_message = message.text
     with open('Отзывы.txt', 'a', encoding='utf-8') as f:
         f.write(username + '\n' + user_message + '\n\n\n')
-    IDStatus[message.from_user.username] = False
+    IDStatuso[message.from_user.username] = False
     markup = types.ReplyKeyboardMarkup(row_width=2)
     item1 = types.KeyboardButton('Игротека  🤹  ➡️')
     item2 = types.KeyboardButton('Для вожатых 🧙‍♂️ ➡️')
